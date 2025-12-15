@@ -1,6 +1,3 @@
-# margaritamg-portfolio
-Data Science &amp; AI Portfolio | Projects, notebooks, dashboards and case studies
-
 # Margarita Martínez Gallardo — Data Science & AI Portfolio
 
 Senior Data Scientist (7+ years) focused on Machine Learning, Advanced Analytics, BI and scalable data solutions.  
