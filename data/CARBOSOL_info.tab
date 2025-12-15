@@ -1,0 +1,28 @@
+/* DATA DESCRIPTION:
+Citation:	Llorente, Mireia; Rovira, Pere; Merino, Agustín; Rubio, Agustín; Turrión, MaBelén; Badía, David; Romanya, Joan; González, Jordi Cortina José Antonio (2018): Further information to the CARBOSOL Database of Spain [dataset]. PANGAEA, https://doi.org/10.1594/PANGAEA.884515, 
+	In: Llorente, M et al. (2018): The CARBOSOL Database: a georeferenced soil profile analytical database for Spain [dataset publication series]. PANGAEA, https://doi.org/10.1594/PANGAEA.884517
+Related to:	Llorente, Mireia; Rovira, Pere; Merino, Agustín; Rubio, Agustín; Turrión, MaBelén; Badía, David; Romanya, Joan; González, Jordi Cortina José Antonio (2018): Physical and chemical characteristics of soil horizons from the CARBOSOL Database of Spain [dataset]. PANGAEA, https://doi.org/10.1594/PANGAEA.884514
+	Llorente, Mireia; Rovira, Pere; Merino, Agustín; Rubio, Agustín; Turrión, MaBelén; Badía, David; Romanya, Joan; González, Jordi Cortina José Antonio (2018): Physical characteristics of soil profiles from the CARBOSOL Database of Spain [dataset]. PANGAEA, https://doi.org/10.1594/PANGAEA.884513
+Coverage:	LATITUDE: 40.308250 * LONGITUDE: -3.732393
+Event(s):	CARBOSOL_DB (CARBOSOL Database Spain) * LATITUDE: 40.308250 * LONGITUDE: -3.732393 * METHOD/DEVICE: Soil profile (SOIL)
+Parameter(s):	File content (Content) * PI: Llorente, Mireia (https://orcid.org/0000-0002-1990-6692, mireia.llorente@uva.es)
+	File name (File name) * PI: Llorente, Mireia (https://orcid.org/0000-0002-1990-6692, mireia.llorente@uva.es)
+	File format (File format) * PI: Llorente, Mireia (https://orcid.org/0000-0002-1990-6692, mireia.llorente@uva.es)
+	File size [kByte] (File size) * PI: Llorente, Mireia (https://orcid.org/0000-0002-1990-6692, mireia.llorente@uva.es)
+	Uniform resource locator/link to file (URL file) * PI: Llorente, Mireia (https://orcid.org/0000-0002-1990-6692, mireia.llorente@uva.es)
+License:	Creative Commons Attribution 3.0 Unported (CC-BY-3.0) (URI: https://creativecommons.org/licenses/by/3.0/)
+Size:	60 data points
+*/
+Content	File name	File format	File size [kByte]	URL file
+Carbosol database readme	Readme.pdf	PDF	214.405	https://store.pangaea.de/Publications/LlorenteM_2017/Readme.pdf
+Figure 1. Distribution of soil profiles in peninsular Spain	Figure1.pdf	PDF	150.502	https://store.pangaea.de/Publications/LlorenteM_2017/Figure1.pdf
+Figure 2. Schematic dara model for soil profile analytical database of spain	Figure2.pdf	PDF	137.951	https://store.pangaea.de/Publications/LlorenteM_2017/Figure2.pdf
+Figure 3. Characteristics of the profiles compiled	Figure3.pdf	PDF	224.552	https://store.pangaea.de/Publications/LlorenteM_2017/Figure3.pdf
+Table 1. Profile distibution per province	Table1.pdf	PDF	81.304	https://store.pangaea.de/Publications/LlorenteM_2017/Table1.pdf
+Table 2. Profile distribution per land cover	Table2.pdf	PDF	100.815	https://store.pangaea.de/Publications/LlorenteM_2017/Table2.pdf
+Table 3. Profile datasheet structure description	Table3.pdf	PDF	121.018	https://store.pangaea.de/Publications/LlorenteM_2017/Table3.pdf
+Table 4. Horizon datasheet structure description	Table4.pdf	PDF	127.550	https://store.pangaea.de/Publications/LlorenteM_2017/Table4.pdf
+Table 5. Metadata file structure description	Table5.pdf	PDF	101.469	https://store.pangaea.de/Publications/LlorenteM_2017/Table5.pdf
+Table 6. Reference datasheet structure description	Table6.pdf	PDF	94.191	https://store.pangaea.de/Publications/LlorenteM_2017/Table6.pdf
+Metadata_CBS_sjss	Metadata.xlsx	XLSX	281.607	https://store.pangaea.de/Publications/LlorenteM_2017/Metadata.xlsx
+Reference table	References.xlsx	XLSX	61.151	https://store.pangaea.de/Publications/LlorenteM_2017/References.xlsx
