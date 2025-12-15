@@ -1,17 +1,23 @@
 """
-# 01 — Ingestion & Feature Engineering (CARBOSOL + AEMET)
+# 01 — Ingestion & Feature Engineering (CARBOSOL + AEMET) + EDA
 
 **Objetivo**
-- Construir un dataset a nivel **perfil** uniendo:
+  - Construir un dataset a nivel **perfil** uniendo:
   - CARBOSOL profiles + horizons
   - Variable objetivo a partir de **Description → cultivo**
   - Agrupación avanzada de cultivo (**cultivo_grupo**)
   - AEMET clima diario 2017 (estación más cercana) + imputación + agregación anual
+  - Revisar calidad de datos (missing / tipos / outliers)
+  - Analizar target (`cultivo_grupo`) y sesgos geográficos (provincia)
+  - PSI por provincia vs global
+  - Correlaciones numéricas
 
 **Artefactos**
 - `outputs/eda/dataset_final_2017_full.csv`
 - `outputs/eda/model/dataset_final_2017_model.csv` (sin clase "Otros")
+- `outputs/eda/analysis/`
 - Checks intermedios en `outputs/eda/` y cache en `cache/`
+
 """
 
 import os
