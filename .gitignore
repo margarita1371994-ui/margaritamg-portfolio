@@ -1,47 +1,61 @@
+# ======================
+# Secrets & environment
+# ======================
+.env
+.env.*
+*.env
+
+# ======================
 # Python
+# ======================
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-
-# Virtual environments
-.env
-.venv
+*$py.class
+.venv/
 venv/
 ENV/
+env/
 
+# ======================
 # Jupyter
+# ======================
 .ipynb_checkpoints/
 *.nbconvert.ipynb
 
-# Data files (raw & intermediate)
-data/raw/
-data/interim/
-data/external/
-data/processed/
+# ======================
+# Data & outputs (heavy / generated)
+# ======================
+outputs/
+cache/
+data/*.csv
+data/*.parquet
+data/*.json
+data/*.zip
 
-# Model artifacts
+# Allow small README files inside data
+!data/README.md
+
+# ======================
+# Models & artifacts
+# ======================
 models/
 *.pkl
 *.joblib
+*.onnx
 
+# ======================
 # Logs
-logs/
+# ======================
 *.log
 
+# ======================
 # OS
+# ======================
 .DS_Store
 Thumbs.db
 
+# ======================
 # IDEs
+# ======================
 .vscode/
 .idea/
-
-# Credentials
-*.env
-*.json
-
-# Marimo
-marimo/_static/
-marimo/_lsp/
-__marimo__/
