@@ -72,9 +72,6 @@ This portfolio showcases **what I can do**, using public data and real-world con
 
 ---
 
-## Skills
-Python · SQL · PySpark · ML · XGBoost · scikit-learn · Power BI · AWS/Azure · MLOps
-
 ## Contact
 Email: marga_mg_13@hotmail.com 
 Phone: +34 677835291
