@@ -26,6 +26,7 @@ import json
 import math
 import logging
 from pathlib import Path
+from dotenv import load_dotenv
 
 import numpy as np
 import pandas as pd
@@ -46,7 +47,8 @@ from datetime import datetime
 # =========================
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJnYV9tZ18xM0Bob3RtYWlsLmNvbSIsImp0aSI6IjAxZDRkZDU2LTMzYzktNGQ5ZS04MmYyLTc2NWJlMzc1YjRiZSIsImlzcyI6IkFFTUVUIiwiaWF0IjoxNzU3MzI5ODAyLCJ1c2VySWQiOiIwMWQ0ZGQ1Ni0zM2M5LTRkOWUtODJmMi03NjViZTM3NWI0YmUiLCJyb2xlIjoiIn0.rhgjNsswbnMadh8S4dnKtU9dJKz5MQ7nnPUa51G4z4A"  # <-- pon tu token AEMET
+load_dotenv()
+API_KEY = os.getenv("AEMET_API_KEY")
 DATOS_DIR = Path("data")
 OUTPUT_DIR = Path("outputs/eda")
 CACHE_DIR = Path("cache")
