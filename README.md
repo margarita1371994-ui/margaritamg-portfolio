@@ -1,7 +1,3 @@
-# Margarita Martínez Gallardo — Data Science & AI Portfolio
-
-Senior Data Scientist (7+ years) focused on Machine Learning, Advanced Analytics, BI and scalable data solutions.  
-Almería (Remote) | Data Science, ML, AI, MLOps, BI | Private Sector
 
 # Margarita Martínez Gallardo — Data Science & AI Portfolio
 
