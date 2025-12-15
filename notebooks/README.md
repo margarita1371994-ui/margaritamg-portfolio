@@ -1,92 +1,81 @@
 # Notebooks — Data Pipeline & Modeling
 
-This folder contains the full, reproducible data science workflow for the
-**GrowSelf – Crop Recommendation** project (TFM, EOI).
+This folder contains the full analytical and modeling pipeline for the
+**GrowSelf crop recommendation project**, developed as part of the EOI Master
+Final Project (TFM).
 
-The pipeline follows a clear separation of concerns:
-- Data acquisition & feature engineering
-- Exploratory analysis 
-- Train / validation split and modeling with class imbalance handling
+The project follows an end-to-end, production-oriented workflow:
+data ingestion → feature engineering → quality checks → modeling.
 
 ---
 
-## 01_data_acquisition_eda.py
+##  01_data_acquisition_eda.py
 
 **Purpose**  
-End-to-end data ingestion, feature engineering and exploratory analysis.
+End-to-end data acquisition, preprocessing and exploratory analysis.
 
 **Main responsibilities**
-- Robust ingestion of CARBOSOL data (PANGAEA `.tab` files)
-- Climate data extraction from AEMET API (daily data, year 2017)
-- Spatial matching: soil profiles → nearest active AEMET station (Haversine)
-- Climate aggregation per profile (mean, sum, rain days)
-- Feature engineering:
-  - Soil horizons aggregation (mean / median per profile)
-  - Target variable extraction from textual descriptions
-  - Advanced crop grouping (`cultivo_grupo`)
-- Data quality checks:
+- Robust ingestion of **CARBOSOL** soil datasets (PANGAEA)
+- Extraction of crop / land-use information from textual descriptions
+- Advanced crop grouping logic (`cultivo_grupo`)
+- Download and parsing of **AEMET climate data (2017)**
+- Spatial assignment of nearest weather station (Haversine distance)
+- Climate data imputation (station/month/global median strategy)
+- Aggregation of daily climate into yearly indicators
+- Soil horizon aggregation at profile level
+- Generation of the final analytical dataset
+- Advanced EDA & data quality checks:
   - Missing values
   - Outliers (IQR)
-  - Distribution sanity checks
-- Dataset generation:
-  - `dataset_final_2017_full.csv`
-  - `dataset_final_2017_model.csv` (filtered, ready for modeling)
+  - Class balance
+  - PSI (Population Stability Index)
+  - Correlation analysis
+- Export of clean datasets to `outputs/eda/`
 
 **Outputs**
-outputs/eda/
-├── dataset_final_2017_full.csv
-├── model/
-│ └── dataset_final_2017_model.csv
-├── analysis/
-│ ├── missing_rates.csv
-│ ├── outlier_rates_iqr.csv
-│ ├── psi_by_provincia.csv
-│ ├── corr_matrix.png
-│ └── analysis_report.csv
+- `dataset_final_2017_full.csv`
+- `dataset_final_2017_model.csv`
+- Multiple EDA artifacts (plots, summaries, reports)
+
+This script is intentionally kept as a `.py` file to emphasize
+**reproducibility, modularity and production-style pipelines**.
 
 ---
 
-## 02_split_modeling_smote.ipynb
+##  02_split_modeling_smote.ipynb
 
 **Purpose**  
-Modeling notebook focused on classification under class imbalance.
+Supervised modeling notebook focused on classification and evaluation.
 
 **Main steps**
-1. Load final modeling dataset
-2. Feature / target separation
-3. Train–test split (stratified)
-4. Preprocessing:
-   - Numeric scaling
-   - Categorical encoding (if applicable)
-5. Class imbalance handling:
-   - SMOTE applied on training set only
-6. Model training:
-   - Baseline models
-   - XGBoost classifier
-7. Evaluation:
-   - F1-macro
-   - Confusion matrix
-   - Class-wise performance
+- Load curated modeling dataset
+- Train / test split
+- Feature preprocessing
+- Class imbalance handling using **SMOTE**
+- Model training (tree-based models)
+- Performance evaluation:
+  - Confusion matrix
+  - Precision / Recall / F1 (macro)
+- Feature importance inspection
 
-**Key focus**
-- No data leakage
-- SMOTE applied **after split**
-- Metrics aligned with multi-class imbalance
+This notebook focuses **only on modeling**, keeping data leakage under control.
 
 ---
 
-## Reproducibility
+##  Environment & dependencies
+
+See `requirements.txt` for the full list of required Python packages.
+
+Sensitive credentials (AEMET API key) are handled via a `.env` file
+and are **not stored in the repository**.
+
+---
+
+##  Reproducibility
 
 To reproduce the full pipeline:
-1. Create a `.env` file with your AEMET API key
-2. Install dependencies from `requirements.txt`
-3. Run `01_data_acquisition_eda.py`
-4. Run `02_split_modeling_smote.ipynb`
 
----
-
-## Notes
-
-- Raw datasets are public but **not stored** in the repository
-- All outputs are fully reproducible
-- The project is designed for clarity, auditability and real-world constraints
+```bash
+pip install -r requirements.txt
+python notebooks/01_data_acquisition_eda.py
+jupyter notebook notebooks/02_split_modeling_smote.ipynb
