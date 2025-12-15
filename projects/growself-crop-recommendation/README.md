@@ -1,1 +1,0 @@
-Create GrowSelf project structure
