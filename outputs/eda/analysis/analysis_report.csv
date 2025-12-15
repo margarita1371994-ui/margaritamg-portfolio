@@ -1,0 +1,9 @@
+metric,value
+missing_global_pct,23.59
+outliers_mean_pct,1.97
+cov_station_active_2017,100.0
+cov_tmed_mean_2017,35.38
+cov_tmax_mean_2017,35.38
+cov_tmin_mean_2017,35.38
+cov_prec_sum_2017,100.0
+cov_n_dias_lluvia,100.0
