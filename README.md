@@ -3,61 +3,74 @@
 Senior Data Scientist (7+ years) focused on Machine Learning, Advanced Analytics, BI and scalable data solutions.  
 Almería (Remote) | Data Science, ML, AI, MLOps, BI | Private Sector
 
+# Margarita Martínez Gallardo — Data Science & AI Portfolio
+
+Senior Data Scientist with 7+ years of experience in **Machine Learning, Advanced Analytics, BI and data-driven decision making**, working mainly in private sector projects.
+
+📍 Almería (Spain) — Remote  
+🧠 Data Science · Machine Learning · AI · MLOps · BI
+
+---
+
+## About this repository
+
+Most of my professional work has been developed in **private companies** and cannot be shared publicly.
+
+This repository serves as a **technical portfolio**, showcasing:
+- My end-to-end data science workflow
+- How I approach real, messy, real-world data
+- Modeling decisions under practical constraints
+- Clean, reproducible and well-structured code
+
+All projects use **public data**, but follow **industry-grade practices**.
+
+---
+
 ## Featured Project
 
-### GrowSelf — Crop Recommendation System (TFM, EOI)
+### GrowSelf — Crop Recommendation System  
+*(TFM — Escuela de Organización Industrial, EOI)*
 
-**End-to-end applied data science project**, focused on predicting the optimal crop type using **soil, climate and geospatial data**.
+End-to-end applied data science project focused on **recommending optimal crop types** based on **soil, climate and geospatial data**.
 
-This project demonstrates my full technical workflow:  
-from raw public data ingestion to feature engineering, modeling and evaluation.
-
-**What you can see here (not just read):**
-- Real data ingestion from **CARBOSOL (PANGAEA)** and **AEMET API**
-- Robust feature engineering and target construction
+**What this project demonstrates:**
+- Real public data ingestion (CARBOSOL + AEMET API)
+- Robust feature engineering
+- Target construction from raw text fields
 - Advanced EDA and data quality analysis
-- Imbalanced classification with **SMOTE**
-- Tree-based ML models (**XGBoost**)
-- Reproducible, well-structured notebooks
+- Imbalanced multiclass classification
+- Machine Learning with SMOTE + XGBoost
+- Reproducible and documented notebooks
 
-Project structure:
-  notebooks/
-  ├─ 01_data_acquisition_eda.py
-  └─ 02_split_modeling_smote.ipynb
-  data/
-  outputs/
-  
-**Key characteristics**
-- Target: `cultivo_grupo` (agricultural land use / crop type)
-- Climate features: aggregated 2017 indicators
-- Model: XGBoost + SMOTE
-- Metric: F1-macro ≈ **0.69** (baseline academic project)
-
-**Go to project**:  
-`notebooks/01_data_acquisition_eda.py`  
-`notebooks/02_split_modeling_smote.ipynb`
+Project location:  
+`projects/growself-crop-recommendation/`
 
 ---
 
 ## Technical Stack
 
-**Languages & Tools**
+**Languages & Libraries**
 - Python · SQL · PySpark  
 - Pandas · NumPy · scikit-learn · XGBoost  
-- Imbalanced-learn (SMOTE)  
-- Power BI  
-
-**Data & MLOps**
+- imbalanced-learn (SMOTE)
+  
+**Data Science & ML**
 - Feature Engineering  
-- Model Evaluation  
-- Class Imbalance  
-- Reproducible Pipelines  
-- Environment management (`.env`)
+- Imbalanced Classification  
+- Model Evaluation (F1-macro)  
+- Data Quality Analysis  
+- Reproducible Pipelines
+- Environment management (.env)
+
+**BI & Visualization**
+- Power BI  
+- Matplotlib · Seaborn
 
 **Cloud & Platforms**
-- Azure · AWS (foundations)  
+- Azure · AWS (foundations)
 
 ---
+
 
 ## Why this portfolio?
 
